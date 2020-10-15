@@ -4,7 +4,8 @@ function on_device_orientation(evt)
 	var alpha = evt.alpha;
 	var beta = evt.beta;
 	//var gamma = evt.gamma;
-	var gamma = -1.1;
+	var gamma = evt.beta;
+	
 	
 	document.getElementById("a").innerHTML = "alpha = "+alpha;
 	document.getElementById("b").innerHTML = "beta = "+beta;
@@ -18,6 +19,6 @@ function on_device_orientation(evt)
 	context.clearRect(0, 0, c.width, c.height);
 	context.fillStyle = "#6A08888";
 	context.beginPath();
-	//context.fillRect(180, 150, event.beta, 50);
 	context.fillRect(180, 150, event.beta, 50);
+	
 }
