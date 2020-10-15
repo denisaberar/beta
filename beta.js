@@ -2,12 +2,12 @@ window.addEventListener("deviceorientation",on_device_orientation);
 function on_device_orientation(evt)
 {
 	var alpha = evt.alpha;
-	//var beta = evt.beta;
-	//var gamma = evt.gamma;
-	
-	
 	var beta = evt.beta;
-	var gamma = evt.beta;
+	var gamma = evt.gamma;
+	
+	
+// 	var beta = evt.beta;
+// 	var gamma = evt.beta;
 	
 	
 	
@@ -23,6 +23,6 @@ function on_device_orientation(evt)
 	context.clearRect(0, 0, c.width, c.height);
 	context.fillStyle = "#6A08888";
 	context.beginPath();
-	context.fillRect(180, 150, event.beta, 50);
+	context.fillRect(180, 150, event.gamma, 50);
 	
 }
