@@ -2,9 +2,11 @@ window.addEventListener("deviceorientation",on_device_orientation);
 function on_device_orientation(evt)
 {
 	var alpha = evt.alpha;
-	var beta = evt.beta;
+	//var beta = evt.beta;
 	//var gamma = evt.gamma;
+	var beta = evt.gamma;
 	var gamma = evt.beta;
+	
 	
 	
 	document.getElementById("a").innerHTML = "alpha = "+alpha;
