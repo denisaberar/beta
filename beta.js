@@ -23,6 +23,6 @@ function on_device_orientation(evt)
 	context.clearRect(0, 0, c.width, c.height);
 	context.fillStyle = "#6A08888";
 	context.beginPath();
-	context.fillRect(180, 150, event.gamma, 50);
+	context.fillRect(180, 150, event.beta, 50);
 	
 }
