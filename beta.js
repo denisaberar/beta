@@ -6,7 +6,7 @@ function on_device_orientation(evt)
 	//var gamma = evt.gamma;
 	
 	
-	var beta = evt.gamma;
+	var beta = evt.beta;
 	var gamma = evt.beta;
 	
 	
